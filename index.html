@@ -466,18 +466,32 @@
               </li>
             </ul>
           </div>
+          <!-- ICONS FOOTER END -->
+          <div class="subscribe-wrapper">
+            <p class="subscribe">Subscribe</p>
+            <form class="modal-form-footer">
+              <input
+                type="email"
+                name="user_email"
+                class="modal-form-input-footer"
+                required
+                pattern="^[a-zA-Zа-яА-Я]+$"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="modal-form-submit-footer">
+                Subscribe
+                <svg class="subscribe-icon" width="24" height="20">
+                  <use href="./images/sprite.svg#icon-iconsubscribe"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
-        <!-- ICONS FOOTER END -->
-        <p class="subscribe">Subscribe</p>
-      <form class="modal-form-footer">
-          <input type="email" name="user_email" class="modal-form-input-footer" required pattern="^[a-zA-Zа-яА-Я]+$" placeholder="E-mail">
-          <button type="submit" class="modal-form-submit-footer">Subscribe</button>
-      </form>
       </div>
     </footer>
 
     <!-- BACKDROP -->
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-btn-icon" width="8" height="8">
@@ -551,16 +565,15 @@
             id="user-policy"
             type="checkbox"
             name="user-policy"
-            class="modal-form-check"
+            class="modal-form-check visually-hidden"
           />
           <label for="user-policy" class="modal-form-check-desc"
             >I accept the terms and conditions of the
-            <a href="">Privacy Policy</a>
+            <a class="user-policy-link" href="">Privacy Policy</a>
           </label>
           <button type="submit" class="modal-form-submit">Send</button>
         </form>
       </div>
-      
     </div>
 
     <script src="./js/modal.js"></script>
